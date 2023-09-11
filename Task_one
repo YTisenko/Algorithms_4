@@ -1,0 +1,12 @@
+def sum_even_and_product_odd(arr: list):
+    sum_even = 0
+    product_odd = 1
+    for num in arr:
+        if num % 2 == 0: 
+            sum_even += num  
+        else:
+            product_odd *= num  
+    return [sum_even, product_odd]
+
+result = sum_even_and_product_odd([1, 2, 3, 6])
+print(result) 
