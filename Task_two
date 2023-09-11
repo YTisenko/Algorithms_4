@@ -1,0 +1,12 @@
+def sum_between_range(arr: list, min_val: int, max_val: int):
+    sum_in_range = 0
+    for num in arr:
+        if min_val <= num <= max_val:  
+            sum_in_range += num 
+    return sum_in_range
+
+arr = [3, 2, 1, 4, 10, 8, 7, 6, 9, 5]
+min_val = 3
+max_val = 7
+result = sum_between_range(arr, min_val, max_val)
+print(result)  
